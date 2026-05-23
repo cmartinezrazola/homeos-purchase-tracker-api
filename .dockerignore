@@ -1,9 +1,13 @@
 # ==============================================================================
-# .gitignore for Django + uv (Windows 11) - Explicit Routes
+# .dockerignore for Django + uv (Windows 11) - Strict Routes
 # ==============================================================================
 
 # --- Root Environment and Development Tools (Strict Root) ---
 /.venv/
+/.git/
+/.gitignore
+/.python-version
+/.dockerignore
 /.pytest_cache/
 /.ruff_cache/
 /.vscode/
@@ -13,13 +17,19 @@
 /db.sqlite3-journal
 
 # --- Documentation (Strict Root) ---
+/docs/
 /site/
+/mkdocs.yml
+/LICENSE
+/*.md
 
 # --- Python Temporary and Compiled Files (Any Level) ---
 **/__pycache__/
 **/*.pyc
 **/*.pyo
 **/*.pyd
+**/tests.py
+**/tests/
 
 # --- Operating System Artifacts (Any Level) ---
 **/.DS_Store
